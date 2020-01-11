@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Dashboard</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <h1>Weather Dashboard</h1>
+</header>
+<section class="main">
+    <div class="sidebar-history">
+        <div class="search">
+            <div class="title">
+                Search for a City:
+            </div>
+            <div class="search-input">
+                <input type="text" id="search-input">
+                <button class="search-btn" id="search">
+                    <?xml version="1.0"?>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#fff" viewBox="0 0 24 24" width="24px" height="24px">
+                        <path d="M 9 2 C 5.1458514 2 2 5.1458514 2 9 C 2 12.854149 5.1458514 16 9 16 C 10.747998 16 12.345009 15.348024 13.574219 14.28125 L 14 14.707031 L 14 16 L 20 22 L 22 20 L 16 14 L 14.707031 14 L 14.28125 13.574219 C 15.348024 12.345009 16 10.747998 16 9 C 16 5.1458514 12.854149 2 9 2 z M 9 4 C 11.773268 4 14 6.2267316 14 9 C 14 11.773268 11.773268 14 9 14 C 6.2267316 14 4 11.773268 4 9 C 4 6.2267316 6.2267316 4 9 4 z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="history">
+            <div class="history-box" id="history">
+            
+            </div>
+        </div>
+    </div>
+    <div class="weather">
+        <div class="today">
+            <div class="city-name">
+                <div class="name" id="cityName">
+                    -
+                </div>
+                <div class="date" id="cityDate">
+                    -
+                </div>
+                <div class="img" id="cityImg">
+                
+                </div>
+            </div>
+            <div class="temperature">
+                Temperature: <span id="t-value">-</span> &#8457;
+            </div>
+            <div class="humidity">
+                Humidity: <span id="h-value">-</span> %
+            </div>
+            <div class="wind">
+                Wind Speed: <span id="w-value">-</span> MPH
+            </div>
+            <div class="index">
+                UV Index : <span id="i-value">-</span>
+            </div>
+        </div>
+        <div class="other">
+            <div class="title">
+                5-Day Forecast:
+            </div>
+            <div class="other-box" id="other">
+            </div>
+        </div>
+    </div>
+</section>
+<script src="js/jquery.js"></script>
+<script src="js/moment.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
